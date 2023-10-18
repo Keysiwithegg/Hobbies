@@ -1,6 +1,7 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: mohave;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

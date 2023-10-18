@@ -272,7 +272,7 @@ footer {
   opacity: 0;
   filter: blur(5px);
   transform: translate(-100%);
-  transition: all 2s;
+  transition: all 3s;
 }
 
 .show{
@@ -323,16 +323,11 @@ footer {
 
 @media only screen and (max-width: 759px) {
   
-.slider{
-  aspect-ratio: 16/10;
-}
-
 .caption h2{
   font-size: 2rem;
 }
 .caption p{
   font-size: 1.5rem;
-  padding-left: 10%;
 }
 }
 
@@ -378,21 +373,13 @@ footer {
   margin: 0.4rem;
 }
 
-.slider{
-  aspect-ratio: 16/10;
-}
 
 .caption h2{
   font-size: 2rem;
-  padding-right: 5%;
 }
 .caption p{
   font-size: 1.2rem;
-  padding-right: 5%;
 }
- .caption{
-    padding-top: 2%;
-  }
 }
 
 @media only screen and (max-width: 427px){
@@ -404,11 +391,10 @@ footer {
   }
   .caption h2{
     font-size: 1.5rem;
+    margin-top: 5%;
   }
   .caption p{
     font-size: .8rem;
-  }
-  .caption{
-    padding-top: 2%;
+    margin-left: 10%;
   }
 }

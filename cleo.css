@@ -164,10 +164,9 @@ p {
   justify-content: center;
   margin: 0;
   font-size: 3rem;
-  margin-bottom: 3%;
-  top: 5%;
+  margin-bottom: 1%;
   font-family: 'mohave', sans-serif;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .caption p {
@@ -376,9 +375,21 @@ footer {
 
 .caption h2{
   font-size: 2rem;
+  margin-top: 1%;
 }
 .caption p{
   font-size: 1.2rem;
+}
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(-100%);
+  transition: all 2s;
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
 }
 }
 

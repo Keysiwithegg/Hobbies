@@ -1,4 +1,5 @@
   @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@700&display=swap');
 /* Global Styles */
 body {
   font-family: mohave;
@@ -145,13 +146,13 @@ p {
 .caption{
   position: absolute;
   font-family: 'Times New Roman', Times, serif;
-  background: rgba(128, 128, 128, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 30%;
-  padding-top: 10%;
   opacity: 0;
   transition: 0.6s;
+  width: 100%;
+  height: 100%;
 }
 
 .caption:hover{
@@ -165,6 +166,8 @@ p {
   font-size: 3rem;
   margin-bottom: 3%;
   top: 5%;
+  font-family: 'mohave', sans-serif;
+  margin-top: 10%;
 }
 
 .caption p {

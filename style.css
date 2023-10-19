@@ -70,7 +70,6 @@ nav ul li a{
     display: flex;
     height: 88%;
     align-items: center;
-    padding-top: 10%;
 }
 .col{
     /* display: row; */
@@ -93,29 +92,18 @@ nav ul li a{
     /* justify-self: left; */
 }
 h1{
-    color: #fff;
+    color: #6de39e;
     font-size: 100px;
 }
 p{
-    color: #fff;
-    font-size: 11px;
+    color: #ffffff;
+    font-size: 17px;
     line-height: 15px;
 }
 
-button{
-    width: 180px;
-    color: #000;
-    font-size: 12px;
-    padding: 12px 0;
-    background: #fff;
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
-}
 .card{
-    width: 200px;
-    height: 230px;
+    width: 250px;
+    height: 270px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -126,11 +114,13 @@ button{
     background-size: cover;
     transition: transform 0.5;
 }
-.card1{
-    background-image: url(keysi_assets/frontpic.png);
+.card1 img{
+    width: 100%;
+    height: 100%;
 }
-.card2{
-    background-image: url(cleo_assets/ghx\ valo.png);
+.card2 img{
+    width: 100%;
+    height: 100%;
 }
 
 .card:hover{

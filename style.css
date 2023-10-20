@@ -1,109 +1,145 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logoo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: rgb(71, 71, 255);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
 }
 
 
-@keyframes animate{
-    0%,100%{
+
+@keyframes animate {
+    0%, 100% {
         background-image: url(./cleo_assets/valo.jpg);
     }
-    25%{
+    25% {
         background-image: url(./cleo_assets/naruto.jpg);
     }
-    50%{
+    50% {
         background-image: url(./cleo_assets/jujutsu\ kaisen.jpg);
     }
-    75%{
+    75% {
         background-image: url(./cleo_assets/apex.jpg);
     }
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
     box-sizing: border-box;
     animation: animate 16s ease-in-out infinite;
 }
-.navbar{
-    height: 12%;
-    display: flex;
-    align-items: center;
-}
-.logo{
+
+.logo {
     width: 50px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 100px;
 }
+
 .logo1{
     width: 64px;
 }
 .logo2{
-    margin-left: 2%;
-}
-.menu-icon{
-    width: 30px;
-    cursor: pointer;
-    margin-left: 40px;
-}
-nav{
-    flex: 1;
-    text-align: right;
+    margin-bottom: .5rem;
 }
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-}
-.row{
+.row {
     display: flex;
     height: 88%;
     align-items: center;
 }
-.col{
-    /* display: row; */
+
+.col {
     align-items: center;
     justify-content: center;
     column-gap: .25rem;
-    /* float: center; */
-    display:flex;
-}
-.col1{
-    /* display: row; */
-    align-items: center;
-    column-gap: .25rem;
-    /* float: center */
     display: flex;
-    flex-direction: column;
-}
-.col1 h1{
-    font-size: 75px;
-    /* justify-self: left; */
-}
-h1{
-    color: #6de39e;
-    font-size: 100px;
-}
-p{
-    color: #ffffff;
-    font-size: 17px;
-    line-height: 15px;
+    flex: 1;
 }
 
-.card{
-    width: 250px;
-    height: 270px;
+.col1 {
+    align-items: center;
+    column-gap: .25rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.col1 h1 {
+    font-size: 75px;
+    text-align: center;
+}
+
+h1 {
+    color: #6de39e;
+    font-size: 100px;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 250px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -112,17 +148,64 @@ p{
     margin: 10px 15px;
     background-position: center;
     background-size: cover;
-    transition: transform 0.5;
-}
-.card1 img{
-    width: 100%;
-    height: 100%;
-}
-.card2 img{
-    width: 100%;
-    height: 100%;
+    height: 250px;
+    transition: transform 0.5s;
 }
 
-.card:hover{
-    transform: translateY(-10px);
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    nav.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .col{
+        justify-content: center;
+    }
+    .card{
+
+        display:flex;
+        flex-direction: column;
+        flex: 1;
+    }
 }
